@@ -9,7 +9,7 @@
 <body>
     
 
-<form action="validacion_condicionales.php" method="post" name="datos_usuario" id="datos_usuario">
+<form action="" method="post" name="datos_usuario" id="datos_usuario">
   <table width="15%" align="center">
     <tr>
       <td>Nombre:</td>
@@ -33,7 +33,7 @@
 
 <?php
 
-    if(isset($_POST["enviando"])){
+    /*if(isset($_POST["enviando"])){
 
         //Variables
         $contra=$_POST["contra"];
@@ -42,7 +42,16 @@
 
         //Operador ternario
 
-        $resultado= $nombre=="juan" && $contra=="12345" ? "Puedes ingresar" : "No puedes ingresar";
+        $resultado= $nombre=="juan" && $contra=="1234" ? "Puedes ingresar" : "No puedes ingresar";
+
+        echo $resultado;
+    }*/
+
+    if(isset($_POST["enviando"])){
+        $nombre=$_POST["nombre_usuario"];
+        $contraseña=$_POST["contra"];
+
+        $resultado= $nombre=="Felipe" && $contraseña=="12345" ? "adelante" : "no entras";
 
         echo $resultado;
     }

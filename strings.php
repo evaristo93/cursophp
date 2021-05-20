@@ -10,16 +10,24 @@
 
 <?php
 
-$variable1="oso";
+$variable1="casa";
 $variable2="CASA";
 
 
-$resultado=strcasecmp ($variable1,$variable2); //devuelve 1 si no son iguales, devuelve 0 si son iguales
+/*$resultado=strcasecmp ($variable1,$variable2); //devuelve 1 si no son iguales, devuelve 0 si son iguales
     if($resultado){
         echo "no coinciden";
     }else{
         echo "coinciden";
-    }
+    }*/
+
+    $resultado=strcasecmp($variable1,$variable2);
+        if($resultado){
+            echo "no coinciden";
+        }else{
+            echo "conciden";
+        }
+    
 
 ?>
     
