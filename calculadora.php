@@ -10,10 +10,10 @@
 
     }
 
-    function calcular($calculo){
+    function calcular($calcular){
         
 
-        if(!strcmp("Suma",$calculo)){
+        if(!strcmp("Suma",$calcular)){
 
             global $numero1;
             global $numero2;
@@ -21,7 +21,7 @@
             echo "el resultado es: " . ($numero1+$numero2);
         }
 
-        if(!strcmp("Resta",$calculo)){
+        if(!strcmp("Resta",$calcular)){
 
             global $numero1;
             global $numero2;
@@ -29,7 +29,7 @@
             echo "el resultado es: " . ($numero1-$numero2);
         }
 
-        if(!strcmp("Multiplicación",$calculo)){
+        if(!strcmp("Multiplicación",$calcular)){
 
             global $numero1;
             global $numero2;
@@ -37,7 +37,7 @@
             echo "el resultado es: " . ($numero1*$numero2);
         }
 
-        if(!strcmp("División",$calculo)){
+        if(!strcmp("División",$calcular)){
 
             global $numero1;
             global $numero2;
@@ -45,7 +45,7 @@
             echo "el resultado es: " . ($numero1/$numero2);
         }
         
-        if(!strcmp("Módulo",$calculo)){
+        if(!strcmp("Módulo",$calcular)){
 
             global $numero1;
             global $numero2;
